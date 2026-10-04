@@ -1,0 +1,61 @@
+# Gradle files
+.gradle/
+build/
+app/build/
+/backend/build/
+
+# Local configuration (SDK path, etc.)
+local.properties
+
+# Logs
+*.log
+npm-debug.log*
+yarn-error.log*
+
+# Android Studio generated
+captures/
+.externalNativeBuild/
+.cxx/
+output-metadata.json
+
+# IntelliJ / Android Studio
+*.iml
+.idea/
+misc.xml
+deploymentTargetDropDown.xml
+render.experimental.xml
+.vscode/
+
+# Keystore files
+*.jks
+*.keystore
+
+# Google Services (Firebase / APIs)
+google-services.json
+
+# Android profiling
+*.hprof
+
+# Node.js
+node_modules/
+/backend/node_modules/
+
+# Python
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+
+# Environment / secrets
+.env
+backend/.env
+*.env
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# APK / AAB output
+# (remove the next two lines if you WANT the APK in the repo)
+*.apk
+*.aab

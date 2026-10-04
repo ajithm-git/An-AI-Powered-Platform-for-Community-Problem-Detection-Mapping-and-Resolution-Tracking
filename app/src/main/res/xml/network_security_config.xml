@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<network-security-config>
+
+    <!-- ─────────────────────────────────── -->
+    <!-- Global default: HTTPS only          -->
+    <!-- ─────────────────────────────────── -->
+    <base-config cleartextTrafficPermitted="false">
+        <trust-anchors>
+            <certificates src="system" />
+        </trust-anchors>
+    </base-config>
+
+    <!-- ─────────────────────────────────── -->
+    <!-- Local development: allow cleartext  -->
+    <!-- for the Android emulator loopback   -->
+    <!-- ─────────────────────────────────── -->
+    <domain-config cleartextTrafficPermitted="true">
+        <!-- Android emulator → host machine -->
+        <domain includeSubdomains="true">10.0.2.2</domain>
+        <!-- Genymotion emulator -->
+        <domain includeSubdomains="true">10.0.3.2</domain>
+        <!-- Localhost (for direct device via adb reverse) -->
+        <domain includeSubdomains="true">localhost</domain>
+        <domain includeSubdomains="true">127.0.0.1</domain>
+        <!-- Add your PC LAN IP here for physical device testing -->
+        <!-- e.g. <domain includeSubdomains="true">192.168.1.42</domain> -->
+    </domain-config>
+
+</network-security-config>
