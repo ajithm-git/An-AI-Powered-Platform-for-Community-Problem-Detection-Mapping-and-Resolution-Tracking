@@ -1,0 +1,41 @@
+{
+  "type": "Compass Connections",
+  "version": {
+    "$numberInt": "1"
+  },
+  "connections": [
+    {
+      "id": "4b11568a-add2-4056-9e26-dcbf96644dd0",
+      "lastUsed": {
+        "$date": {
+          "$numberLong": "1787405238387"
+        }
+      },
+      "favorite": {
+        "name": "ajith"
+      },
+      "savedConnectionType": "recent",
+      "connectionOptions": {
+        "connectionString": "mongodb://localhost:27017/",
+        "oidc": {}
+      }
+    },
+    {
+      "id": "9e32c16b-739a-421a-943a-e129d6e03939",
+      "lastUsed": {
+        "$date": {
+          "$numberLong": "1791865035035"
+        }
+      },
+      "favorite": {
+        "name": "communityAi",
+        "color": "color1"
+      },
+      "savedConnectionType": "recent",
+      "connectionOptions": {
+        "connectionString": "mongodb://localhost:27017/",
+        "oidc": {}
+      }
+    }
+  ]
+}
